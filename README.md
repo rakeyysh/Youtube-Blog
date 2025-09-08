@@ -52,3 +52,11 @@ Now Mongoose:
 # ✅ Role of .populate() in one sentence
 👉 .populate() automatically fetches the full document(s) referenced by an ObjectId and replaces the IDs with the actual objects.
 
+# Using slice() (if quotes are only at start and end)
+const name = '"Raju Chaiwala"';  
+console.log(name); // "Raju Chaiwala"
+
+const cleanName = name.slice(1, -1);
+console.log(cleanName); // Raju Chaiwalaa
+
+
